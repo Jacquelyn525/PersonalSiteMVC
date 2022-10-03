@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-PersonalSite02-C04E3130-B13E-4029-BA6C-7F6D7F904819</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\Content\" />
+    <Folder Include="wwwroot\vendor\swiper\angular\angular\src\" />
+    <Folder Include="wwwroot\vendor\swiper\angular\esm2015\angular\src\" />
+    <Folder Include="wwwroot\vendor\swiper\types\modules\" />
+    <Folder Include="wwwroot\vendor\waypoints\src\" />
+    <Folder Include="wwwroot\vendor\waypoints\test\" />
+    <Folder Include="_Archive\vendor\swiper\angular\angular\src\" />
+    <Folder Include="_Archive\vendor\swiper\angular\esm2015\angular\src\" />
+    <Folder Include="_Archive\vendor\swiper\types\modules\" />
+    <Folder Include="_Archive\vendor\waypoints\src\" />
+    <Folder Include="_Archive\vendor\waypoints\test\" />
+  </ItemGroup>
+
+</Project>
