@@ -1,3 +1,83 @@
-.main-section{
+.main-section {
     padding-top: 8em;
+}
+
+
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #18D26E;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+    padding-left: 20px;
+}
+
+    .resume .resume-item ul li {
+        padding-bottom: 10px;
+    }
+
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+}
+
+.resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #bd6be0;
+    border: 2px solid #bd6be0;
+}
+
+.resume .resume-item h6 {
+    color: blue;
+}
+/****************************************************************************************************************/
+/********************************About Me Pic Box Shadow*******************/
+
+.about {
+    -webkit-box-shadow: 10px 7px 32px -1px rgba(144,85,162,1);
+    -moz-box-shadow: 10px 7px 32px -1px rgba(144,85,162,1);
+    box-shadow: 10px 7px 32px -1px rgba(144,85,162,1)
+}
+
+.portfolio h3 {
+    position: absolute;
+    top: 5vh;
+    color: white;
+    width: 85%;
+    margin-left: 7.5%;
+    
 }
