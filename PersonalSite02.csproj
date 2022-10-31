@@ -13,10 +13,13 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+    <PackageReference Include="NETCore.MailKit" Version="2.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="wwwroot\img\Content\" />
+    <Folder Include="wwwroot\vendor\bootstrap-icons\" />
     <Folder Include="wwwroot\vendor\swiper\angular\angular\src\" />
     <Folder Include="wwwroot\vendor\swiper\angular\esm2015\angular\src\" />
     <Folder Include="wwwroot\vendor\swiper\types\modules\" />
@@ -28,5 +31,7 @@
     <Folder Include="_Archive\vendor\waypoints\src\" />
     <Folder Include="_Archive\vendor\waypoints\test\" />
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties wwwroot_4css_4style_1blue_1min_1css_1map__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>

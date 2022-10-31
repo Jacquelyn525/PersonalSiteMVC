@@ -4,8 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
         TESTIMONIALS SLIDER
     ===================================================== */
     var testimonialsSlider = new Swiper('.testimonials-slider', {
-        slidesPerView: 1,
-        spaceBetween: 10,
+        autoplay: {
+            delay: 3000,
+        },
+        slidesPerView: 4,
+        spaceBetween: 20,
         breakpoints: {
             720: {
                 slidesPerView: 2,
@@ -17,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 slidesPerView: 4,
             },
         },
+        
+        loop: true,
         pagination: {
             el: '.swiper-pagination',
             dynamicBullets: true,
@@ -99,13 +104,13 @@ document.addEventListener('DOMContentLoaded', function () {
     /* =====================================================
         TRIGGER COUNTERS WHEN REACHING THE TARGET SECTION
     ===================================================== */
-    var waypoint = new Waypoint({
-        element: document.getElementById('statistics'),
-        handler: function (direction) {
-            countup();
-        },
-        offset: '95%',
-    });
+    //var waypoint = new Waypoint({
+    //    element: document.getElementById('statistics'),
+    //    handler: function (direction) {
+    //        countup();
+    //    },
+    //    offset: '95%',
+    //});
 
     /* =====================================================
         BOOTSTRAP SCROLLSPY
@@ -118,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
     /* =====================================================
         MIXITUP FILTER
     ===================================================== */
-    var mixer = mixitup('#content');
+    //var mixer = mixitup('#content');
 
     /* =====================================================
         REVEAL ANIMATION
