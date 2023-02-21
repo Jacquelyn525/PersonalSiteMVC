@@ -35,13 +35,13 @@
 
 </head>
 <body class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
-    <nav class="navbar navbar-expand-lg navbar-light py-4 py-lg-0 fixed-top bg-white border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light py-4 py-lg-0 fixed-top bg-white border-bottom menu">
         <div class="container">
             <a class="navbar-brand font-serif text-uppercase h6 text-primary fw-bold mb-0" href="#intro">Jacquelyn Little</a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link text-uppercase active" href="@Url.Action("Index", "Home")">Intro</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="@Url.Action("Index", "Home")">Intro</a></li>
                     <li class="nav-item"><a class="nav-link text-uppercase" href="@Url.Action("About", "Home")">About</a></li>
                     <li class="nav-item"><a class="nav-link text-uppercase" href="@Url.Action("Portfolio", "Home")">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link text-uppercase" href="@Url.Action("Resume", "Home")">Resume</a></li>
@@ -77,6 +77,9 @@
         </div>
     </footer>
     <!-- JavaScript files-->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+            crossorigin="anonymous"></script>
     <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="~/vendor/swiper/swiper-bundle.min.js"></script>
     @*<script src="~/vendor/waypoints/lib/noframework.waypoints.min.js"></script>*@
@@ -87,6 +90,19 @@
     <script src="~/vendor/mixitup/mixitup.js"></script>
     <script src="~/js/leaflet.js"></script>
     <script src="~/js/theme.js"></script>
+    <script>
+
+        //For each <li> in the <nav class="menu">, apply the following function
+
+        $('.navbar-nav li').each(function () {
+            //If the <a> tag inside a <li> is linked to the current URL
+            if ($(this).find('a').attr('href') == window.location.pathname) {
+                //Add the "active" class to the <a> tag
+                $(this).find('a').addClass('active');
+            }
+        });
+
+    </script>
 
     <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
